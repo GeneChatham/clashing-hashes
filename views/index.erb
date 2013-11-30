@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="application.css" type="text/css" />
+</head>
+<body>
+	<h2>Welcome <%= @names %>.</h2>
+	<% if @show_description %>
+		<p>This is my bitchin' description!</p>
+	<% end %>	
+	<div>
+		<p> This is one sweet div! </p>
+	</div>
+
+	<form action="/twitter" method="post">
+	    Enter hashtag #1: <input type="text" name="first_hash"/> <br/>
+	    Enter hashtag #2: <input type="text" name="second_hash"/> <br/>
+	    <p><input type="submit"/></p>
+	</form>
+	
+</body>
+</html>
